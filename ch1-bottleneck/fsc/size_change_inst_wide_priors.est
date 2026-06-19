@@ -1,0 +1,13 @@
+// Priors and rules file
+// ****************************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1  NCurrent$  unif  10  1e6  output    bounded
+1  NAncestral$  unif  10  1e6  output  bounded
+1  Time$  unif  100  1e6  output 
+
+[COMPLEX PARAMETERS]
+
+0  RescaleN$ = NAncestral$/NCurrent$ output
